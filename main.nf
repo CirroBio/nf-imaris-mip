@@ -46,7 +46,7 @@ workflow {
 
     Channel
         .fromPath("${params.inputs}".split(',').toList())
-        .toSortedList()
+        .flatten()
         .set { input_ch }
 
     make_mip(
