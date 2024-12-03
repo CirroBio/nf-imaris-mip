@@ -1,0 +1,9 @@
+{
+    "inputs": "$.params.dataset.paramJson.inputs.inputs",
+    "make_MIP": "$.params.dataset.paramJson.make_MIP.make_MIP",
+    "make_slice": "$.params.dataset.paramJson.make_slice.make_slice",
+    "slice_number": "$.params.dataset.paramJson.make_slice.slice_number",
+    "make_JPG": "$.params.dataset.paramJson.make_JPG.make_JPG",
+    "include_scalebar": "$.params.dataset.paramJson.include_scalebar.include_scalebar",
+    "outdir": "$.params.dataset.s3|/data/"
+}

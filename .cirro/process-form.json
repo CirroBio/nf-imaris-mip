@@ -1,0 +1,82 @@
+{
+    "form": {
+        "properties": {
+            "inputs": {
+                "type": "object",
+                "title": "Input Imaris Images",
+                "properties": {
+                    "inputs": {
+                        "title": "Input Files (.ims)",
+                        "description": "Imaris images to process",
+                        "file": "**/*.ims",
+                        "multiple": true,
+                        "pathType": "dataset",
+                        "type": "string"
+                    }        
+                }
+            },
+            "make_MIP": {
+                "type": "object",
+                "title": "Maximum Intensity Projection (MIP)",
+                "properties": {
+                    "make_MIP": {
+                        "description": "Make MIP",
+                        "title": "Whether or not to compute a Maximum Intensity Projection (MIP)",
+                        "default": true,
+                        "type": "boolean"
+                    }
+                }
+            },
+            "make_slice": {
+                "type": "object",
+                "title": "Export Slice",
+                "properties": {
+                    "make_slice": {
+                        "description": "Export Slice",
+                        "title": "Whether or not to export a single slice through the Z-stack",
+                        "default": true,
+                        "type": "boolean"
+                    }
+                },
+                "dependencies": {
+                    "make_slice": {
+                        "properties": {
+                            "slice_number": {
+                                "title": "Slice Number",
+                                "description": "The slice number to export (ranging from 0-100)",
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 100
+                            }
+                        }
+                    }
+                }
+            },
+            "make_JPG": {
+                "type": "object",
+                "title": "Export JPG",
+                "properties": {
+                    "make_JPG": {
+                        "description": "Export JPG",
+                        "title": "Whether or not to export a JPG image",
+                        "default": true,
+                        "type": "boolean"
+                    }
+                }
+            },
+            "include_scalebar": {
+                "type": "object",
+                "title": "Include Scalebar",
+                "properties": {
+                    "include_scalebar": {
+                        "description": "Include Scalebar",
+                        "title": "Whether or not to include a scalebar in the exported image",
+                        "default": true,
+                        "type": "boolean"
+                    }
+                }
+            },
+        }
+    },
+    "ui": {}
+}
