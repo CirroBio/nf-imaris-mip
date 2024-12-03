@@ -46,7 +46,8 @@
                                 "description": "The slice number to export (ranging from 0-100)",
                                 "type": "integer",
                                 "minimum": 0,
-                                "maximum": 100
+                                "maximum": 100,
+                                "default": 50
                             }
                         }
                     }
