@@ -20,4 +20,4 @@ if __name__ == '__main__':
         inputs = ",".join(inputs)
 
     # Add the updated inputs to the parameters
-    ds.add_param("inputs", inputs)
+    ds.add_param("inputs", inputs, overwrite=True)
