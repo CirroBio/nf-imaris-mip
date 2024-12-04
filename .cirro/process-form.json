@@ -6,8 +6,8 @@
                 "title": "Input Imaris Images",
                 "properties": {
                     "inputs": {
-                        "title": "Input Files (.ims)",
-                        "description": "Imaris images to process",
+                        "title": "Filter Input Files (optional)",
+                        "description": "By default, all files with the extension '.ims' will be used. Use this field to filter the input files.",
                         "file": "**/*.ims",
                         "multiple": true,
                         "pathType": "dataset",
